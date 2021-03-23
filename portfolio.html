@@ -12,34 +12,35 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 </head>
 
 <body style="background-color: #0e2565;;">
-<!-- HEADER -->
-   <header role="banner" class="position-absolute">    
+  <!-- HEADER -->
+  <header role="banner" class="position-absolute">
     <!-- Top Navigation -->
-    <nav class="background-transparent background-primary-dott full-width sticky">          
-      <div class="top-nav"> 
-        <!-- mobile version logo -->              
+    <nav class="background-transparent background-primary-dott full-width sticky">
+      <div class="top-nav">
+        <!-- mobile version logo -->
         <div class="logo hide-l hide-xl hide-xxl">
-           <a href="index.html" class="logo">
+          <a href="index.html" class="logo">
             <!-- Logo White Version -->
             <img class="logo-white" src="img/logo.svg" alt="">
             <!-- Logo Dark Version -->
-            <img class="logo-dark" src="img/logo-dark.svg" alt=""> </a>
-        </div>                  
+            <img class="logo-dark" src="img/logo-dark.svg" alt="">
+          </a>
+        </div>
         <p class="nav-text"></p>
-        
+
         <!-- left menu items -->
         <div class="top-nav left-menu">
-           <ul class="right top-ul chevron">
-              <li><a href="index.html">Home</a></li>
-              <!-- <li><a href="about-us.html">About Us</a></li> -->
-              <li><a href="resume.html">Resume</a></li>
-           </ul>
+          <ul class="right top-ul chevron">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about-us.html">About Us</a></li> -->
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
         </div>
-        
+
         <!-- logo -->
         <ul class="logo-menu">
           <a href="index.html" class="logo">
@@ -47,50 +48,137 @@
             <!-- <img class="logo-white" src="img/logo.svg" alt=""> -->
             <!-- Logo Dark Version -->
             <!-- <img class="logo-dark" src="img/logo-dark.svg" alt="">-->
-            <img style="padding-top: 20px;" class="logo-white" src="/images/logo-logo-black-on-white-background.png" alt=""> 
-               <img  style="padding-top: 10px;"  class="logo-dark" src="/images/logo-logo-black-on-white-background.png" alt=""> 
+            <img style="padding-top: 20px;" class="logo-white" src="/images/logo-logo-black-on-white-background.png"
+              alt="">
+            <img style="padding-top: 10px;" class="logo-dark" src="/images/logo-logo-black-on-white-background.png"
+              alt="">
           </a>
         </ul>
-        
+
         <!-- right menu items -->
         <div class="top-nav right-menu">
-           <ul class="top-ul chevron">
-              <!-- <li>
+          <ul class="top-ul chevron">
+            <!-- <li>
                 <a>Products</a>
                 <ul>
                   <li><a>Product 1</a></li>
                   <li><a>Product 2</a></li>
                 </ul>
               </li> -->
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-           </ul> 
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
- 
 
-  <div class="contact_div">
-    <div class="contact">
-        <div>
-          email  a@gmail.com
-        </div>
-        <div>
-          linkedin  a@gmail.com
-        </div>
-        <div>
-            a@gmail.com
-        </div>
+
+  <div class="portfolio_div">
+    <div class="flex_filters">
+        <button>All</button>
+        <button>Web</button>
+        <button>3D</button>
+        <button>Media</button>
     </div>
-    <div class="map">
-      <img src="/img/map.png" alt=""> 
+    <div class="content-wrapper">
+  
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Amazing First Title</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+            <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+            <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Amazing Title</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
+            <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Amazing Forth Title that is Quite Long</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+            <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Amazing Fifth Title</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
+            <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="news-card">
+        <a href="#" class="news-card__card-link"></a>
+        <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+        <div class="news-card__text-wrapper">
+          <h2 class="news-card__title">Amazing 6<sup>th</sup> Title</h2>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
+            <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    
     </div>
   </div>
 
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+
   <script language="javascript" type="text/javascript" src="js/main.js"></script>
   <!-- <script type="text/javascript" src="js/responsee.js"></script> -->
-  <script type="text/javascript" src="js/template-scripts.js"></script> 
+  <script type="text/javascript" src="js/template-scripts.js"></script>
 </body>
 
 </html>
