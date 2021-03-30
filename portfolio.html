@@ -75,107 +75,111 @@
 
 
   <div class="portfolio_div">
-    <div class="flex_filters">
+    <!-- <div  > -->
+      <button class="portfolio_back" id="portfolio_back" onclick="showAllCaseStudy()">Back to portfolios</button>
+    <!-- </div> -->
+    <div id="portfolio">
+      <div class="flex_filters">
         <button>All</button>
         <button>Web</button>
         <button>3D</button>
         <button>Media</button>
-    </div>
-    <div class="content-wrapper">
-  
-      <div class="news-card">
-        <a href="#" class="news-card__card-link"></a>
-        <img src="img/aq.png" alt="" class="news-card__image">
-        <div class="news-card__text-wrapper">
-          <h2 class="news-card__title">AquaOne</h2>
-          <div class="news-card__post-date">Jan 29, 2018</div>
-          <div class="news-card__details-wrapper">
-            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-            <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-        </div>
       </div>
     
-      <div class="news-card">
-        <a href="#" class="news-card__card-link"></a>
-        <img src="img/hm.png" alt="" class="news-card__image">
-        <div class="news-card__text-wrapper">
-          <h2 class="news-card__title">HMClause</h2>
-          <div class="news-card__post-date">Jan 29, 2018</div>
-          <div class="news-card__details-wrapper">
-            <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
-            <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-        </div>
-      </div>
-    
-      <div class="news-card">
-        <a href="#" class="news-card__card-link"></a>
-        <img src="/img/pj.png" alt="" class="news-card__image">
-        <div class="news-card__text-wrapper">
-          <h2 class="news-card__title">University</h2>
-          <div class="news-card__post-date">Jan 29, 2018</div>
-          <div class="news-card__details-wrapper">
-            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
-            <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-        </div>
-      </div>
-    
-      <div class="news-card">
-        <a href="#" class="news-card__card-link"></a>
-        <img src="img/3d2.png" alt="" class="news-card__image">
-        <div class="news-card__text-wrapper">
-          <h2 class="news-card__title">3D Outdoor Scene</h2>
-          <div class="news-card__post-date">Jan 29, 2018</div>
-          <div class="news-card__details-wrapper">
-            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
-            <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
-          </div>
-        </div>
-      </div>
+      <div class="content-wrapper">
 
-      <div class="news-card">
-        <a href="#" class="news-card__card-link"></a>
-        <img src="img/up.png" alt="" class="news-card__image">
-        <div class="news-card__text-wrapper">
-          <h2 class="news-card__title">After Effects</h2>
-          <div class="news-card__post-date">Jan 29, 2018</div>
-          <div class="news-card__details-wrapper">
-            <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
-            <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+        <div class="news-card" onclick="showCaseStudy(1)">
+          <a href="#" class="news-card__card-link"></a>
+          <img src="img/aq.png" alt="" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">AquaOne</h2>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
+                tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+              <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    
-      <div class="news-card">
-        <a href="#" class="news-card__card-link"></a>
-        <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-        <div class="news-card__text-wrapper">
-          <h2 class="news-card__title">Amazing Fifth Title</h2>
-          <div class="news-card__post-date">Jan 29, 2018</div>
-          <div class="news-card__details-wrapper">
-            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
-            <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+
+        <div class="news-card">
+          <a href="#" class="news-card__card-link"></a>
+          <img src="img/hm.png" alt="" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">HMClause</h2>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex
+                natus nulla rem sequi laborum quod fugit&hellip;</p>
+              <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
           </div>
         </div>
+
+        <div class="news-card">
+          <a href="#" class="news-card__card-link"></a>
+          <img src="/img/pj.png" alt="" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">University</h2>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                beatae&hellip;</p>
+              <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="#" class="news-card__card-link"></a>
+          <img src="img/3d2.png" alt="" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">3D Outdoor Scene</h2>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
+                tempore repellat? Ullam sed officia.</p>
+              <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="#" class="news-card__card-link"></a>
+          <img src="img/up.png" alt="" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">After Effects</h2>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+              <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <a href="#" class="news-card__card-link"></a>
+          <img
+            src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="" class="news-card__image">
+          <div class="news-card__text-wrapper">
+            <h2 class="news-card__title">Amazing Fifth Title</h2>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
+                tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
+              <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
-    
- 
-    
     </div>
   </div>
 
-  <div class="flex-container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>  
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>  
-    <div>7</div>
-    <div>8</div>
-  </div>
+
 
 
   <script language="javascript" type="text/javascript" src="js/main.js"></script>

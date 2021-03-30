@@ -26,7 +26,6 @@ body{
 }
 
 
-
 .picture{
   display: grid;
   grid-template-columns: 2fr 1fr 2fr ;
@@ -128,42 +127,49 @@ body{
 
 
 .contact_div{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 6fr 1fr ;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr ; */
+  /* grid-template-rows: 1fr 6fr 1fr ; */
   margin: 10px;
   margin-top:20vh;
   /* background-color: #071230; */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     #0712306c,
-    #071230);
+    #071230); */
   /* grid-template-rows: 2fr 2fr 1fr ; */
 }
 
 .contact{
-  grid-column-start: 1;
+  /* grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 3; */
+  width: 70vw;
+  margin:auto;
   text-align: center;
   color: white;
   font-size: 36px;
 }
 
 .social{
-  padding-left: 250px;
-  margin-top: 30vh;
+  display: flex;
+  margin: auto;
+  margin-top: -15vh;
   text-align: center;
+  justify-content: center;
 }
 .map{
   width: 100%;
-  grid-column-start: 2;
+  filter : drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  /* grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 3; */
 }
 
+
+/* PORTFOLIO PAGE */
 
 .portfolio_div{
   margin: 10px;
@@ -191,7 +197,18 @@ body{
   font-size: 30px;
 }
 
-
+.portfolio_back{
+  display: none;
+  float: right;
+  cursor: pointer;
+  background-color: #ffb1a4;
+  width: 100%;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 30px;
+}
 
 
 .content-wrapper {
@@ -203,6 +220,15 @@ body{
   padding: 0.5rem;
   color:white;
 }
+
+
+
+
+
+
+
+
+
 
 .news-card {
   
@@ -360,7 +386,8 @@ body{
  .social > ul {
    position: relative;
    display: flex;
-   transform: rotate(-25deg) skew(25deg);
+   align-items: space-around;
+   /* transform: rotate(-25deg) skew(25deg); */
    transform-style: preserve-3d;
 }
 .social > ul li {

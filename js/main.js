@@ -27,3 +27,20 @@ typewriter
   .pauseFor(1000)
   .deleteChars(20)
   .start();
+
+
+
+
+ function showCaseStudy(id){
+  var port = document.getElementById('portfolio');
+  port.style.display="none";
+  var p_btn=document.getElementsByClassName('portfolio_back');
+  p_btn[0].style.display = "block";
+}
+
+function showAllCaseStudy(){
+  var port = document.getElementById('portfolio');
+  port.style.display="block";
+  var p_btn=document.getElementsByClassName('portfolio_back');
+  p_btn[0].style.display = "none";
+}
