@@ -49,6 +49,9 @@ body{
   grid-row-start: 2;
   grid-row-end: 3;
 }
+.anirudh > img{
+  filter: opacity(90%);
+}
 
 
 .designation{
