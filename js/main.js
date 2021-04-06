@@ -36,6 +36,21 @@ typewriter
   port.style.display="none";
   var p_btn=document.getElementsByClassName('portfolio_back');
   p_btn[0].style.display = "block";
+  var casestudy;
+  if(id==1)
+     casestudy=document.getElementById('aone');
+  else if(id==2)
+     casestudy=document.getElementById('HMClause');
+  else if(id==3)
+     casestudy=document.getElementById('pj');
+  else if(id==4)
+     casestudy=document.getElementById('threed');
+  else if(id==5)
+     casestudy=document.getElementById('ae');
+
+ casestudy.style.display="block";
+  
+
 }
 
 function showAllCaseStudy(){
@@ -43,4 +58,56 @@ function showAllCaseStudy(){
   port.style.display="block";
   var p_btn=document.getElementsByClassName('portfolio_back');
   p_btn[0].style.display = "none";
+  document.getElementById('aone').style.display="none";
+  document.getElementById('HMClause').style.display="none";
+  document.getElementById('pj').style.display="none";
+  document.getElementById('threed').style.display="none";
+  document.getElementById('ae').style.display="none";
+}
+
+function collapse() {
+  var x = document.getElementsByClassName("collapse");
+  var y = document.getElementsByClassName("filterplus");
+  var z = document.getElementsByClassName("filterminus");
+
+  if (x[0].style.display === "none") {
+    x[0].style.display = "block";
+    y[0].style.display = "none";
+    z[0].style.display = "block";
+  } else {
+    x[0].style.display = "none";
+    y[0].style.display = "block";
+    z[0].style.display = "none";
+  }
+}
+function collapse1() {
+  var x = document.getElementsByClassName("collapse1");
+  var y = document.getElementsByClassName("filterplus1");
+  var z = document.getElementsByClassName("filterminus1");
+
+  if (x[0].style.display === "none") {
+    x[0].style.display = "block";
+    y[0].style.display = "none";
+    z[0].style.display = "block";
+  } else {
+    x[0].style.display = "none";
+    y[0].style.display = "block";
+    z[0].style.display = "none";
+  }
+}
+
+function collapse2() {
+  var x = document.getElementsByClassName("collapse2");
+  var y = document.getElementsByClassName("filterplus2");
+  var z = document.getElementsByClassName("filterminus2");
+
+  if (x[0].style.display === "none") {
+    x[0].style.display = "block";
+    y[0].style.display = "none";
+    z[0].style.display = "block";
+  } else {
+    x[0].style.display = "none";
+    y[0].style.display = "block";
+    z[0].style.display = "none";
+  }
 }

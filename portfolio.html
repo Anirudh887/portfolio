@@ -25,9 +25,9 @@
         <div class="logo hide-l hide-xl hide-xxl">
           <a href="index.html" class="logo">
             <!-- Logo White Version -->
-            <img class="logo-white" src="img/logo.svg" alt="">
+            <img class="logo-white" src="images/Logo_light.png" alt="">
             <!-- Logo Dark Version -->
-            <img class="logo-dark" src="img/logo-dark.svg" alt="">
+            <img class="logo-dark" src="images/Logo_dark.png" alt=""> </a>
           </a>
         </div>
         <p class="nav-text"></p>
@@ -48,10 +48,8 @@
             <!-- <img class="logo-white" src="img/logo.svg" alt=""> -->
             <!-- Logo Dark Version -->
             <!-- <img class="logo-dark" src="img/logo-dark.svg" alt="">-->
-            <img style="padding-top: 20px;" class="logo-white" src="/images/logo-logo-black-on-white-background.png"
-              alt="">
-            <img style="padding-top: 10px;" class="logo-dark" src="/images/logo-logo-black-on-white-background.png"
-              alt="">
+            <img  class="logo-white" src="images/Logo_light.png" alt=""> 
+            <img  style="width: 50px;"  class="logo-dark" src="images/Logo_dark.png" alt=""> 
           </a>
         </ul>
 
@@ -74,18 +72,19 @@
   </header>
 
 
-  <div class="portfolio_div">
+  <div class="portfolio_div" style="margin-top:140px;">
     <!-- <div  > -->
-      <button class="portfolio_back" id="portfolio_back" onclick="showAllCaseStudy()">Back to portfolios</button>
+    <button class="portfolio_back" id="portfolio_back" onclick="showAllCaseStudy()">Back to portfolios</button>
     <!-- </div> -->
     <div id="portfolio">
       <div class="flex_filters">
-        <button>All</button>
-        <button>Web</button>
-        <button>3D</button>
-        <button>Media</button>
+        <!--  <a href="something" class="button5" style="border-color:#FFFFFF; background-color:rgba(0,0,0,0); color:#FFFFFF">View source code on SJWhub</a> -->
+        <button class="button5" style="background-color:#42cc8c;">All</button>
+        <button class="button5" style="background-color:#42cc8c;">Web</button>
+        <button class="button5" style="background-color:#42cc8c;">3D</button>
+        <button class="button5" style="background-color:#42cc8c;">Media</button>
       </div>
-    
+
       <div class="content-wrapper">
 
         <div class="news-card" onclick="showCaseStudy(1)">
@@ -93,71 +92,70 @@
           <img src="img/aq.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
             <h2 class="news-card__title">AquaOne</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
+            <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
             <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
-                tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+              <p class="news-card__excerpt">Web application developed for tracking the AquaCulture process along with
+                seed tracking&hellip;</p>
               <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="news-card">
+        <div class="news-card" onclick="showCaseStudy(2)">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/hm.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
             <h2 class="news-card__title">HMClause</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
+            <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
             <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex
-                natus nulla rem sequi laborum quod fugit&hellip;</p>
+              <p class="news-card__excerpt">Dashboard developed to showcase the performance of various varieties of
+                seeds&hellip;</p>
               <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="news-card">
+        <div class="news-card" onclick="showCaseStudy(3)">
           <a href="#" class="news-card__card-link"></a>
           <img src="/img/pj.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
             <h2 class="news-card__title">University</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
+            <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
             <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                beatae&hellip;</p>
+              <p class="news-card__excerpt">Web Application developed to facilitate assessment of professors at PJSTAU.
+                &hellip;</p>
               <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="news-card">
+        <div class="news-card" onclick="showCaseStudy(4)">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/3d2.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">3D Outdoor Scene</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
+            <h2 class="news-card__title">3D Projects</h2>
+            <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
             <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo
-                tempore repellat? Ullam sed officia.</p>
+              <p class="news-card__excerpt">3D design projects developed as a part of Interactive Media Management.</p>
               <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="news-card">
+        <div class="news-card" onclick="showCaseStudy(5)">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/up.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
             <h2 class="news-card__title">After Effects</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
+            <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
             <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+              <p class="news-card__excerpt">Short into logos and user journeys made using Adobe After Effects for various projects.</p>
               <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="news-card">
+        <!-- <div class="news-card">
           <a href="#" class="news-card__card-link"></a>
           <img
             src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
@@ -171,12 +169,113 @@
               <a href="#" class="news-card__read-more">View <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
       </div>
     </div>
+
+
+    <div id="aone" class="aone">
+      <img src="/img/aone/1.png" alt="">
+      <img src="/img/aone/2.png" alt="">
+      <img src="/img/aone/3.png" alt="">
+      <img src="/img/aone/4.png" alt="">
+      <img src="/img/aone/5.png" alt="">
+      <img src="/img/aone/6.png" alt="">
+      <img src="/img/aone/7.png" alt="">
+    </div>
+
+    <div id="HMClause" class="HMClause">
+      <img src="/img/hm/1.png" alt="">
+      <img src="/img/hm/2.png" alt="">
+      <img src="/img/hm/3.png" alt="">
+      <img src="/img/hm/4.png" alt="">
+      <img src="/img/hm/5.png" alt="">
+    </div>
+
+    <div id="pj" class="pj">
+      <img src="/img/pj/1.png" alt="">
+      <img src="/img/pj/2.png" alt="">
+      <img src="/img/pj/3.png" alt="">
+      <img src="/img/pj/4.png" alt="">
+      <img src="/img/pj/6.png" alt="">
+    </div>
+
+
+    <div id="ae" class="ae">
+      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/GxbZmpoPP6o" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/xuw9MDqOVUg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/EeELHkuK3QM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div id="threed" class="threed">
+      <div style="margin-top:40px;background: rgba(0, 0, 0, 0.623); color:white; text-align: center;padding: 30px;">
+        <span style="font-size: 20px;">British Soldier Room</span><span class="filterplus" onclick="collapse()">+</span>
+        <span class="filterminus" onclick="collapse()">-</span>
+      </div>
+      <div class="collapse" style="display: none;">
+        <img src="/img/3d/1.png" alt="">
+        <img src="/img/3d/2.png" alt="">
+        <img src="/img/3d/3.png" alt="">
+        <img src="/img/3d/4.png" alt="">
+        <img src="/img/3d/5.png" alt="">
+        <img src="/img/3d/6.png" alt="">
+        <img src="/img/3d/7.png" alt="">
+        <img src="/img/3d/8.png" alt="">
+        <img src="/img/3d/9.png" alt="">
+        <img src="/img/3d/10.jpg" alt="">
+        <img src="/img/3d/11.jpg" alt="">
+        <img src="/img/3d/12.png" alt="">
+      </div>
+      <div style="margin-top:30px;background: rgba(0, 0, 0, 0.623); color:white; text-align: center;padding: 30px;">
+        <span style="font-size: 20px;">River Landscape</span><span class="filterplus1" onclick="collapse1()">+</span>
+        <span class="filterminus1" onclick="collapse1()">-</span>
+      </div>
+      <div class="collapse1" style="display: none;">
+        <img src="/img/3d/13.png" alt="">
+        <img src="/img/3d/14.png" alt="">
+        <img src="/img/3d/15.png" alt="">
+        <img src="/img/3d/16.jpg" alt="">
+        <img src="/img/3d/17.png" alt="">
+        <img src="/img/3d/18.jpg" alt="">
+        <img src="/img/3d/19.png" alt="">
+        <img src="/img/3d/20.png" alt="">
+        <img src="/img/3d/21.png" alt="">
+        <img src="/img/3d/22.jpg" alt="">
+        <img src="/img/3d/23.png" alt="">
+      </div>
+      <div style="margin-top:30px;background: rgba(0, 0, 0, 0.623); color:white; text-align: center;padding: 30px;">
+        <span style="font-size: 20px;">Beach Vacation</span><span class="filterplus2" onclick="collapse2()">+</span>
+        <span class="filterminus2" onclick="collapse2()">-</span>
+      </div>
+      <div class="collapse2" style="display: none;">
+        <img src="/img/3d/24.png" alt="">
+        <img src="/img/3d/25.png" alt="">
+        <img src="/img/3d/26.png" alt="">
+        <img src="/img/3d/27.png" alt="">
+        <img src="/img/3d/28.png" alt="">
+        <img src="/img/3d/29.png" alt="">
+        <img src="/img/3d/30.png" alt="">
+        <img src="/img/3d/31.png" alt="">
+        <img src="/img/3d/32.png" alt="">
+        <img src="/img/3d/34.png" alt="">
+        <img src="/img/3d/35.png" alt="">
+        <img src="/img/3d/36.png" alt="">
+        <img src="/img/3d/37.png" alt="">
+        <img src="/img/3d/38.png" alt="">
+        <img src="/img/3d/39.png" alt="">
+        <img src="/img/3d/40.png" alt="">
+      </div>
+    </div>
+
   </div>
 
 
