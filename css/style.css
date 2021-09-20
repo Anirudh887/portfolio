@@ -593,7 +593,7 @@ body{
           display: none;
         }
          .collapse, .collapse1, .collapse2{
-          text-align: center;
+          margin: auto;
         } 
         .filterplus1{
           float: right;
