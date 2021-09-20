@@ -17,6 +17,11 @@
 </head>
 
 <body style="background-color: #0e2565;;">
+  <div class="top-layer"></div>
+  <div class="top-layer top-layer--2"></div>
+  <div class="top-layer top-layer--3"></div>
+  <div class="top-layer top-layer--4"></div>
+  <div class="top-layer top-layer--5"></div>
   <!-- HEADER -->
   <header role="banner" class="position-absolute">
     <!-- Top Navigation -->
@@ -36,7 +41,7 @@
         <!-- left menu items -->
         <div class="top-nav left-menu">
           <ul class="right top-ul chevron">
-            <li><a href="index.html">Home</a></li>
+            <li id="top"><a id="top" href="index.html">Home</a></li>
             <!-- <li><a href="about-us.html">About Us</a></li> -->
             <li><a href="resume.html">Resume</a></li>
           </ul>
@@ -44,7 +49,7 @@
 
         <!-- logo -->
         <ul class="logo-menu">
-          <a href="index.html" class="logo">
+          <a  href="index.html" class="logo">
             <!-- Logo White Version -->
             <!-- <img class="logo-white" src="img/logo.svg" alt=""> -->
             <!-- Logo Dark Version -->
@@ -80,16 +85,16 @@
     <div id="portfolio">
       <div class="flex_filters">
         <!--  <a href="something" class="button5" style="border-color:#FFFFFF; background-color:rgba(0,0,0,0); color:#FFFFFF">View source code on SJWhub</a> -->
-        <button class="button5" style="background-color:#42cc8c;">All</button>
-        <button class="button5" style="background-color:#42cc8c;">Web</button>
-        <button class="button5" style="background-color:#42cc8c;">3D</button>
-        <button class="button5" style="background-color:#42cc8c;">Media</button>
-        <button class="button5" style="background-color:#42cc8c;">Unity</button>
+        <button onclick="filters('All')" class="button5" style="background-color:#42cc8c;">All</button>
+        <button onclick="filters('Web')" class="button5" style="background-color:#42cc8c;">Web</button>
+        <button onclick="filters('3D')" class="button5" style="background-color:#42cc8c;">3D</button>
+        <button onclick="filters('Media')" class="button5" style="background-color:#42cc8c;">Media</button>
+        <button onclick="filters('Unity')" class="button5" style="background-color:#42cc8c;">Unity</button>
       </div>
 
       <div class="content-wrapper">
 
-        <div class="news-card" onclick="showCaseStudy(1)">
+        <div class="news-card" onclick="showCaseStudy(1)" id="aq">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/aq.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
@@ -103,7 +108,7 @@
           </div>
         </div>
 
-        <div class="news-card" onclick="showCaseStudy(2)">
+        <div class="news-card" onclick="showCaseStudy(2)" id="hm">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/hm.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
@@ -117,7 +122,7 @@
           </div>
         </div>
 
-        <div class="news-card" onclick="showCaseStudy(3)">
+        <div class="news-card" onclick="showCaseStudy(3)" id="pj">
           <a href="#" class="news-card__card-link"></a>
           <img src="/img/pj.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
@@ -131,7 +136,7 @@
           </div>
         </div>
 
-        <div class="news-card" onclick="showCaseStudy(4)">
+        <div class="news-card" onclick="showCaseStudy(4)" id="threed">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/3d2.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
@@ -144,7 +149,7 @@
           </div>
         </div>
 
-        <div class="news-card" onclick="showCaseStudy(5)">
+        <div class="news-card" onclick="showCaseStudy(5)" id="media">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/up.png" alt="" class="news-card__image">
           <div class="news-card__text-wrapper">
@@ -157,7 +162,7 @@
           </div>
         </div>
 
-        <div class="news-card" >
+        <div class="news-card" id="unity">
           <a href="#" class="news-card__card-link"></a>
           <img src="img/unity.jpg" alt="Unity" class="news-card__image">
           <div class="news-card__text-wrapper">

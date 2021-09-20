@@ -31,10 +31,34 @@ typewriter
 
 
 
+
  function showCaseStudy(id){
+  var t1 =document.getElementsByClassName('top-layer');
+  var t2 =document.getElementsByClassName('top-layer--2');
+  var t3 =document.getElementsByClassName('top-layer--3');
+  var t4 =document.getElementsByClassName('top-layer--4');
+  var t5 =document.getElementsByClassName('top-layer--5');
+
+  t1[0].hidden = false;
+  t2[0].hidden = false;
+  t3[0].hidden = false;
+  t4[0].hidden = false;
+  t5[0].hidden = false;
+  var layerClass = "." + "top"+ "-layer";
+  var layers = document.querySelectorAll(layerClass);
+  for (const layer of layers) {
+    layer.classList.toggle("active");
+
+  }
   var port = document.getElementById('portfolio');
   port.style.display="none";
-  var p_btn=document.getElementsByClassName('portfolio_back');
+
+ 
+
+
+  setTimeout(function(){ 
+   
+    var p_btn=document.getElementsByClassName('portfolio_back');
   p_btn[0].style.display = "block";
   var casestudy;
   if(id==1)
@@ -49,11 +73,28 @@ typewriter
      casestudy=document.getElementById('ae');
 
  casestudy.style.display="block";
-  
-
+  }, 1000);
+  setTimeout(function(){ 
+    t1[0].hidden = true;
+    t2[0].hidden = true;
+    t3[0].hidden = true;
+    t4[0].hidden = true;
+    t5[0].hidden = true;
+  }, 1600);
 }
 
 function showAllCaseStudy(){
+  var t1 =document.getElementsByClassName('top-layer');
+  var t2 =document.getElementsByClassName('top-layer--2');
+  var t3 =document.getElementsByClassName('top-layer--3');
+  var t4 =document.getElementsByClassName('top-layer--4');
+  var t5 =document.getElementsByClassName('top-layer--5');
+
+  t1[0].hidden = false;
+  t2[0].hidden = false;
+  t3[0].hidden = false;
+  t4[0].hidden = false;
+  t5[0].hidden = false;
   var port = document.getElementById('portfolio');
   port.style.display="block";
   var p_btn=document.getElementsByClassName('portfolio_back');
@@ -109,5 +150,49 @@ function collapse2() {
     x[0].style.display = "none";
     y[0].style.display = "block";
     z[0].style.display = "none";
+  }
+}
+
+
+function filters(cat){
+  if(cat=="All"){
+    document.getElementById('aq').hidden = false;
+    document.getElementById('hm').hidden = false;
+    document.getElementById('pj').hidden = false;
+    document.getElementById('threed').hidden = false;
+    document.getElementById('media').hidden = false;
+    document.getElementById('unity').hidden = false;
+  }
+  else if( cat=="Web"){
+    document.getElementById('aq').hidden = false;
+    document.getElementById('hm').hidden = false;
+    document.getElementById('pj').hidden = false;
+    document.getElementById('threed').hidden = true;
+    document.getElementById('media').hidden = true;
+    document.getElementById('unity').hidden = true;
+  }
+  else if( cat=="3D"){
+    document.getElementById('aq').hidden = true;
+    document.getElementById('hm').hidden = true;
+    document.getElementById('pj').hidden = true;
+    document.getElementById('threed').hidden = false;
+    document.getElementById('media').hidden = true;
+    document.getElementById('unity').hidden = false;
+  }
+  else if( cat=="Media"){
+    document.getElementById('aq').hidden = true;
+    document.getElementById('hm').hidden = true;
+    document.getElementById('pj').hidden = true;
+    document.getElementById('threed').hidden = true;
+    document.getElementById('media').hidden = false;
+    document.getElementById('unity').hidden = true;
+  }
+  else if( cat=="Unity"){
+    document.getElementById('aq').hidden = true;
+    document.getElementById('hm').hidden = true;
+    document.getElementById('pj').hidden = true;
+    document.getElementById('threed').hidden = true;
+    document.getElementById('media').hidden = true;
+    document.getElementById('unity').hidden = false;
   }
 }
