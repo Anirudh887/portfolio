@@ -592,9 +592,9 @@ body{
           cursor: pointer;
           display: none;
         }
-        /* .collapse, .collapse1, .collapse2{
-          display: none;
-        } */
+         .collapse, .collapse1, .collapse2{
+          text-align: center;
+        } 
         .filterplus1{
           float: right;
           padding-right: var(--pad-and-gap);
