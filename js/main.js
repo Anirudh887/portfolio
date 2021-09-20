@@ -95,6 +95,12 @@ function showAllCaseStudy(){
   t3[0].hidden = false;
   t4[0].hidden = false;
   t5[0].hidden = false;
+  var layerClass = "." + "top"+ "-layer";
+  var layers = document.querySelectorAll(layerClass);
+  for (const layer of layers) {
+    layer.classList.remove("active");
+
+  }
   var port = document.getElementById('portfolio');
   port.style.display="block";
   var p_btn=document.getElementsByClassName('portfolio_back');
@@ -158,41 +164,41 @@ function filters(cat){
   if(cat=="All"){
     document.getElementById('aq').hidden = false;
     document.getElementById('hm').hidden = false;
-    document.getElementById('pj').hidden = false;
-    document.getElementById('threed').hidden = false;
+    document.getElementById('pjstau').hidden = false;
+    document.getElementById('threedee').hidden = false;
     document.getElementById('media').hidden = false;
     document.getElementById('unity').hidden = false;
   }
   else if( cat=="Web"){
     document.getElementById('aq').hidden = false;
     document.getElementById('hm').hidden = false;
-    document.getElementById('pj').hidden = false;
-    document.getElementById('threed').hidden = true;
+    document.getElementById('pjstau').hidden = false;
+    document.getElementById('threedee').hidden = true;
     document.getElementById('media').hidden = true;
     document.getElementById('unity').hidden = true;
   }
   else if( cat=="3D"){
     document.getElementById('aq').hidden = true;
     document.getElementById('hm').hidden = true;
-    document.getElementById('pj').hidden = true;
-    document.getElementById('threed').hidden = false;
+    document.getElementById('pjstau').hidden = true;
+    document.getElementById('threedee').hidden = false;
     document.getElementById('media').hidden = true;
     document.getElementById('unity').hidden = false;
   }
   else if( cat=="Media"){
     document.getElementById('aq').hidden = true;
     document.getElementById('hm').hidden = true;
-    document.getElementById('pj').hidden = true;
-    document.getElementById('threed').hidden = true;
+    document.getElementById('pjstau').hidden = true;
+    document.getElementById('threedee').hidden = true;
     document.getElementById('media').hidden = false;
     document.getElementById('unity').hidden = true;
   }
   else if( cat=="Unity"){
     document.getElementById('aq').hidden = true;
     document.getElementById('hm').hidden = true;
-    document.getElementById('pj').hidden = true;
+    document.getElementById('pjstau').hidden = true;
     document.getElementById('threed').hidden = true;
-    document.getElementById('media').hidden = true;
+    document.getElementById('mediaee').hidden = true;
     document.getElementById('unity').hidden = false;
   }
 }
