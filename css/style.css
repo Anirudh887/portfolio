@@ -657,3 +657,24 @@ body{
           background: #f67280;z-index: 999999;
           transition-delay: 0.1s;
         }
+
+@media screen and (max-width:768px) {
+  .designation{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* font-size: 36px;
+    color: white;
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 50px; */
+  }
+
+  .anirudh{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+}
