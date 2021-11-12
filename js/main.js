@@ -1,10 +1,10 @@
- // Sticky Nav Bar
- $(window).scroll(function() {
-  if ($(this).scrollTop() > 20){  
-      $('.sticky').addClass("fixed");
+// Sticky Nav Bar
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 20) {
+    $('.sticky').addClass("fixed");
   }
-  else{
-      $('.sticky').removeClass("fixed");
+  else {
+    $('.sticky').removeClass("fixed");
   }
 });
 
@@ -32,49 +32,51 @@ typewriter
 
 
 
- function showCaseStudy(id){
-  var t1 =document.getElementsByClassName('top-layer');
-  var t2 =document.getElementsByClassName('top-layer--2');
-  var t3 =document.getElementsByClassName('top-layer--3');
-  var t4 =document.getElementsByClassName('top-layer--4');
-  var t5 =document.getElementsByClassName('top-layer--5');
+function showCaseStudy(id) {
+  var t1 = document.getElementsByClassName('top-layer');
+  var t2 = document.getElementsByClassName('top-layer--2');
+  var t3 = document.getElementsByClassName('top-layer--3');
+  var t4 = document.getElementsByClassName('top-layer--4');
+  var t5 = document.getElementsByClassName('top-layer--5');
 
   t1[0].hidden = false;
   t2[0].hidden = false;
   t3[0].hidden = false;
   t4[0].hidden = false;
   t5[0].hidden = false;
-  var layerClass = "." + "top"+ "-layer";
+  var layerClass = "." + "top" + "-layer";
   var layers = document.querySelectorAll(layerClass);
   for (const layer of layers) {
     layer.classList.toggle("active");
 
   }
   var port = document.getElementById('portfolio');
-  port.style.display="none";
-
- 
+  port.style.display = "none";
 
 
-  setTimeout(function(){ 
-   
-    var p_btn=document.getElementsByClassName('portfolio_back');
-  p_btn[0].style.display = "block";
-  var casestudy;
-  if(id==1)
-     casestudy=document.getElementById('aone');
-  else if(id==2)
-     casestudy=document.getElementById('HMClause');
-  else if(id==3)
-     casestudy=document.getElementById('pj');
-  else if(id==4)
-     casestudy=document.getElementById('threed');
-  else if(id==5)
-     casestudy=document.getElementById('ae');
 
- casestudy.style.display="block";
+
+  setTimeout(function () {
+
+    var p_btn = document.getElementsByClassName('portfolio_back');
+    p_btn[0].style.display = "block";
+    var casestudy;
+    if (id == 1)
+      casestudy = document.getElementById('aone');
+    else if (id == 2)
+      casestudy = document.getElementById('HMClause');
+    else if (id == 3)
+      casestudy = document.getElementById('pj');
+    else if (id == 4)
+      casestudy = document.getElementById('threed');
+    else if (id == 5)
+      casestudy = document.getElementById('ae');
+    else if (id == 6)
+      casestudy = document.getElementById('unit');
+
+    casestudy.style.display = "block";
   }, 1000);
-  setTimeout(function(){ 
+  setTimeout(function () {
     t1[0].hidden = true;
     t2[0].hidden = true;
     t3[0].hidden = true;
@@ -83,33 +85,34 @@ typewriter
   }, 1600);
 }
 
-function showAllCaseStudy(){
-  var t1 =document.getElementsByClassName('top-layer');
-  var t2 =document.getElementsByClassName('top-layer--2');
-  var t3 =document.getElementsByClassName('top-layer--3');
-  var t4 =document.getElementsByClassName('top-layer--4');
-  var t5 =document.getElementsByClassName('top-layer--5');
+function showAllCaseStudy() {
+  var t1 = document.getElementsByClassName('top-layer');
+  var t2 = document.getElementsByClassName('top-layer--2');
+  var t3 = document.getElementsByClassName('top-layer--3');
+  var t4 = document.getElementsByClassName('top-layer--4');
+  var t5 = document.getElementsByClassName('top-layer--5');
 
   t1[0].hidden = false;
   t2[0].hidden = false;
   t3[0].hidden = false;
   t4[0].hidden = false;
   t5[0].hidden = false;
-  var layerClass = "." + "top"+ "-layer";
+  var layerClass = "." + "top" + "-layer";
   var layers = document.querySelectorAll(layerClass);
   for (const layer of layers) {
     layer.classList.remove("active");
 
   }
   var port = document.getElementById('portfolio');
-  port.style.display="block";
-  var p_btn=document.getElementsByClassName('portfolio_back');
+  port.style.display = "block";
+  var p_btn = document.getElementsByClassName('portfolio_back');
   p_btn[0].style.display = "none";
-  document.getElementById('aone').style.display="none";
-  document.getElementById('HMClause').style.display="none";
-  document.getElementById('pj').style.display="none";
-  document.getElementById('threed').style.display="none";
-  document.getElementById('ae').style.display="none";
+  document.getElementById('aone').style.display = "none";
+  document.getElementById('HMClause').style.display = "none";
+  document.getElementById('pj').style.display = "none";
+  document.getElementById('threed').style.display = "none";
+  document.getElementById('ae').style.display = "none";
+  document.getElementById('unit').style.display = "none";
 }
 
 function collapse() {
@@ -160,8 +163,8 @@ function collapse2() {
 }
 
 
-function filters(cat){
-  if(cat=="All"){
+function filters(cat) {
+  if (cat == "All") {
     document.getElementById('aq').hidden = false;
     document.getElementById('hm').hidden = false;
     document.getElementById('pjstau').hidden = false;
@@ -169,7 +172,7 @@ function filters(cat){
     document.getElementById('media').hidden = false;
     document.getElementById('unity').hidden = false;
   }
-  else if( cat=="Web"){
+  else if (cat == "Web") {
     document.getElementById('aq').hidden = false;
     document.getElementById('hm').hidden = false;
     document.getElementById('pjstau').hidden = false;
@@ -177,7 +180,7 @@ function filters(cat){
     document.getElementById('media').hidden = true;
     document.getElementById('unity').hidden = true;
   }
-  else if( cat=="3D"){
+  else if (cat == "3D") {
     document.getElementById('aq').hidden = true;
     document.getElementById('hm').hidden = true;
     document.getElementById('pjstau').hidden = true;
@@ -185,7 +188,7 @@ function filters(cat){
     document.getElementById('media').hidden = true;
     document.getElementById('unity').hidden = false;
   }
-  else if( cat=="Media"){
+  else if (cat == "Media") {
     document.getElementById('aq').hidden = true;
     document.getElementById('hm').hidden = true;
     document.getElementById('pjstau').hidden = true;
@@ -193,12 +196,12 @@ function filters(cat){
     document.getElementById('media').hidden = false;
     document.getElementById('unity').hidden = true;
   }
-  else if( cat=="Unity"){
+  else if (cat == "Unity") {
     document.getElementById('aq').hidden = true;
     document.getElementById('hm').hidden = true;
     document.getElementById('pjstau').hidden = true;
-    document.getElementById('threed').hidden = true;
-    document.getElementById('mediaee').hidden = true;
+    document.getElementById('threedee').hidden = true;
+    document.getElementById('media').hidden = true;
     document.getElementById('unity').hidden = false;
   }
 }

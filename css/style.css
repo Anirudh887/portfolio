@@ -554,10 +554,18 @@ body{
         .ae > iframe{
           margin: auto;
           margin-top: 50px;
-          width: 80vw  ;
+          /* width: 80vw  ; */
         }
-
-
+        .unit{
+          margin: auto;
+          display: none;
+        }
+        
+        .unit > iframe{
+          margin: auto;
+          margin-top: 50px;
+          /* width: 80vw  ; */
+        }
         
       .threed{
         margin: auto;
